@@ -30,7 +30,7 @@ class Rvc < Formula
 
     # prefix.install "plist/com.ribose.rvd.plist"
     # (prefix+"com.ribose.rvd.plist").chmod 0644
-    inreplace "conf/rvd.json", /501,\n/, "#{`id -u`.chomp},"
+    inreplace "conf/rvd.json", /501,\n/, ""
     (etc/"rvd").install "conf/rvd.json"
   end
 
